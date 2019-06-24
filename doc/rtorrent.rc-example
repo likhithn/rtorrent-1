@@ -13,6 +13,8 @@ method.insert = cfg.logs,     private|const|string, (cat,(cfg.basedir),"log/")
 method.insert = cfg.logfile,  private|const|string, (cat,(cfg.logs),"rtorrent-",(system.time),".log")
 method.insert = cfg.session,  private|const|string, (cat,(cfg.basedir),".session/")
 method.insert = cfg.watch,    private|const|string, (cat,(cfg.basedir),"watch/")
+method.insert = d.add_tracker, simple, "execute=~/rtorrent/scripts/addtracker.pl,$d.loaded_file=,$argument.0="
+
 
 # Create instance directories
 execute.throw = sh, -c, (cat,\
