@@ -1,4 +1,4 @@
-Addded udp tracker announce method to the config (In process)
+Addded udp tracker announce method to the config (In progress)
 BUILDING
 
  Run "./autogen.sh" to generate the configure scripts if
